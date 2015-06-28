@@ -3,4 +3,4 @@
 - name: dstat package install
   yum: name=dstat state=latest
 - name: profile file
-  copy: src=dstat.sh dest=/etc/profile.d/dstat.sh
+  copy: src=dstat.sh dest=/etc/profile.d/dstat.sh mode=0755
